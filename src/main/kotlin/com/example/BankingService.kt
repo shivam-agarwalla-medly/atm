@@ -1,7 +1,5 @@
 package com.example
 
-class BankingService {
-    fun withdraw(amount: Int) {
-        //DO NOT CHANGE. ONLY FOR DEMO PURPOSES.
-    }
+interface BankingService {
+    fun withdraw(amount: Int)
 }

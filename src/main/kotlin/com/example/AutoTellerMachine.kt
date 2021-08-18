@@ -1,7 +1,8 @@
 package com.example
 
-class AutoTellerMachine {
+class AutoTellerMachine(private val printer: Printer, private val bankingService: BankingService) {
     fun withdraw(amount: Int) {
-        //WRITE CODE HERE.
+        bankingService.withdraw(amount)
+        printer.print("$amount Withdrawn")
     }
 }
